@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Get URL</title>
+</head>
+<body>
+
+<h1>Here is your website:</h1>
+<h3 id="h3Node">_____</h3>
+
+<script>
+	// variables
+	var h3Node = document.getElementById("h3Node");
+	var url = prompt("Enter a URL");
+	var http = url.substr(0,4);
+
+	//http check
+	if(http.toLowerCase() != "http") {
+		url = "https://" + url
+	}
+
+	var html = "<a target='_blank' href='" + url + "'>" + url + " </a>";
+	h3Node.innerHTML = html;
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Your First Script</title>
+</head>
+<body>
+
+	<h1 id="sentence">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget consequat risus. Vivamus dapibus imperdiet arcu, sit amet dictum metus pulvinar ut. Morbi placerat ex vel mi suscipit, eu accumsan nibh auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam at felis lectus. Vestibulum vitae rutrum dolor. Vestibulum lobortis lacus at scelerisque laoreet. Vivamus tincidunt aliquam urna quis consectetur.
+	</h1>
+
+	<script>
+		var sentenceNode = document.getElementById('sentence');
+		var sentence = sentenceNode.innerText;
+
+		var upperSentence = sentence.toUpperCase();
+		var lowerSentence = sentence.toLowerCase();
+		var firstTenChars = sentence.substr(0,10);
+
+		var allWords = sentence.split(" ");
+		var bracketWords = "(" + allWords.join(")(") + ")";
+
+		var firstThreeWords = allWords.slice(0,3);
+		var middleWords = allWords.slice(5,10);
+		var makeSentence = middleWords.join(" ");
+
+		sentenceNode.innerText = makeSentence
+
+	</script>
+</body>
+</html>

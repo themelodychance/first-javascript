@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/number-check.css">
+	<title>Number Check</title>
+
+	<!-- fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+	<!-- end of fonts -->
+
+</head>
+<nav>
+	<h1>Number Checker</h1>
+	<h3>a script by Melody Chance</h3>
+</nav>
+<body>
+
+<p>Your age: <span id=spanNum></span><span id=voteCheck></span></p>
+
+<script>
+
+	var spanNum = document.getElementById("spanNum");
+	var voteCheck = document.getElementById("voteCheck")
+	var age = prompt("Please enter your age.", "Enter Your Age");
+	age = Number(age);
+
+	if(age) {	
+		if(age >= 18) {
+			console.log("You can vote!")
+			spanNum.innerText = age
+			voteCheck.innerText = ". You may legally vote."
+		} else {
+			console.warn("You may not vote")
+			spanNum.innerText = age
+			voteCheck.innerText = ". You may not legally vote."
+		}
+	} else {
+		console.error("not a number")
+		voteCheck.innerText = " Error. Please refresh the page and try again."
+	}
+
+</script>
+
+</body>
+</html>

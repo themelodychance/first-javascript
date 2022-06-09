@@ -1,0 +1,36 @@
+nav {
+	background-color: whitesmoke;
+	height: 150px;
+	margin: 0px
+}
+
+nav h1 {
+	font-size: 72px;
+	text-align: center;
+	padding: 15px;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+nav h3 {
+	text-align: center;
+	margin-top: -60px;
+}
+
+header {
+	
+}
+
+body {
+	background-color: lightslategrey;
+	margin: 0px;
+	padding: none;
+	padding-top: 30px;
+	font-family: sans-serif;
+}
+
+body p {
+	font-size: 24px;
+	margin: 50px;
+	text-align: center;
+}
